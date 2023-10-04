@@ -28,7 +28,7 @@ var lowercase = confirm ("Click 'OK' to use lower case characters or click 'Canc
 var uppercase = confirm ("Click 'OK' to use upper case characters or click 'Cancel' ");
 var special = confirm ("Click 'OK' to use special charters or click 'Cancel' ");
 
-if (numbers == false && lowercase == false && uppercase == false && special == false) {
+if (numbers === false && lowercase === false && uppercase === false && special === false) {
   alert("You have to choose one option.");
   return;
 }
@@ -60,7 +60,7 @@ if (special == true) {
     myPassword += selection[Math.floor(Math.random() * selection.length)];
 }
 
-console.log("You have you password")
+console.log("You have your password")
 
   return myPassword;
 
