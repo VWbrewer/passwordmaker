@@ -16,12 +16,12 @@ var myPassword = "";
 function generatePassword() {
   var passwordLength = prompt ("Select password length between 8 and 128 characters anc click 'OK'");
 
-if (passwordLength < 8 || passwordLength > 128 || isNaN(passwordLength)) {
-  alert("Try again.");
+if (passwordLength >= 8 && passwordLength <= 128 & isNaN(passwordLength)) {
+  alert ("Try again.");
   return;
 }
 
-console.log("You entered the password length")
+console.log("You entered the password length");
 
 var numbers = confirm ("Click 'OK' to use numbers characters or click 'Cancel' ");
 var lowercase = confirm ("Click 'OK' to use lower case characters or click 'Cancel' ");
@@ -32,7 +32,7 @@ if (numbers === false && lowercase === false && uppercase === false && special =
   alert("You have to choose one option.");
   return;
 }
-console.log("You selected the characters to use")
+console.log("You selected the characters to use");
 
 if (numbers == true) {
   for (var i = 0; i <characters.numbers.length; i++) 
@@ -40,12 +40,12 @@ if (numbers == true) {
 }
 
 if (lowercase == true) {
-  for (var i = 0; i <characters.lowercase.length; i++) 
+  for (var i = 0; i <characters.lowercase.length; i++)
     selection.push(characters.lowercase[i]);
 }
 
 if (uppercase == true) {
-  for (var i = 0; i <characters.uppercase.length; i++) 
+  for (var i = 0; i <characters.uppercase.length; i++)
     selection.push(characters.uppercase[i]);
 }
 
@@ -60,7 +60,7 @@ if (special == true) {
     myPassword += selection[Math.floor(Math.random() * selection.length)];
 }
 
-console.log("You have your password")
+console.log("You have your password");
 
   return myPassword;
 
