@@ -7,12 +7,11 @@ This is my third project and I am proud to say that this site is used to generat
 
 ## Installation
 
+https://vwbrewer.github.io/passwordmaker/
+
 ## Usage
 
 One would use this site is used to generate random passwords for use with any account. No more worrying about trying to be creative to have a secure account for any login.
-
-
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
 
 ![Alt text](<assets/images/Screenshot 2023-10-05 125632.png>)
 ![Alt text](<assets/images/Screenshot 2023-10-05 125815.png>)
